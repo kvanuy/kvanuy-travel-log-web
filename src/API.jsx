@@ -1,7 +1,7 @@
-const API_URL = 'http://localhost:1337';
+const API_URL = 'http://localhost:10000';
 
 export async function listLogEntries(logEntries, setLogEntries) {
-  const url = 'http://localhost:1337/api/logs';
+  const url = 'http://localhost:10000/api/logs';
   try {
     const response = await fetch(url, {method: 'GET'});
     if (!response.ok) {
@@ -18,7 +18,7 @@ export async function listLogEntries(logEntries, setLogEntries) {
 
 
 export async function createLogEntry(entry, logEntries, setLogEntries){
-  const url = 'http://localhost:1337/api/logs'
+  const url = 'http://localhost:10000/api/logs'
   const response = await fetch(url, {method:'POST', 
     headers: {'content-type' : 'application/json',},
     body: entry,
@@ -36,7 +36,7 @@ export async function createLogEntry(entry, logEntries, setLogEntries){
 
 
 export async function deleteLogEntry(entry,logEntries, setLogEntries){
-  const url = 'http://localhost:1337/api/logs'
+  const url = 'http://localhost:10000/api/logs'
   const response = await fetch(url, {method:'DELETE', 
     headers: {'content-type' : 'application/json',},
     body: entry,
