@@ -1,6 +1,6 @@
 {
   "name": "webclient",
-  "homepage": "https://kvanuy.github.io/kvanuy-travel-log-log/",
+  "homepage": "https://kvanuy.github.io/kvanuy-travel-log-web/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
